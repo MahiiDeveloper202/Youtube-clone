@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="main">
+    <div class="main2">
+    </div>
+    <div class="a">kteach khalil- youtube</div>
+    <div class="b">
+      <div class="c"></div> </div>
+
+
+      <div class="e">+</div>
+      <div class="g"></div>
+      <div class="f">&rang;</div>
+      <div class=" i"></div>
+       <div class="h"></div>
+       <div class=" j"></div>
+      <div class="k"></div>
+    <a href="" class="cut-refresh-icon">
+    &times;
+</a>
+      <div class=" n"></div>
+      <div class="o"></div>
+      <div class="p"></div>
+      <div class="q"></div>
+      <div class="r"></div>
+      <div class="s"> </div>
+      <a href="https://www.youtube.com/@kteachkhalil" target="_blank" class="t">
+    youtube.com/@kteachkhalil
+</a>
+       <div class=" u "> 
+        <div class=" v">M</div>
+        
+      </div>
+      <div class=" w">...</div>
+      <div class=" x"><hr></div>
+
+    
+
+
+
+      <a href="" class="refresh-link">
+  <svg viewBox="0 0 24 24" width="20" height="20">
+    <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+  </svg>
+</a>
+
+      <div class="a4">YouTube <sup class="a5">PK</sup></div>
+      <div class=" a6">
+        <div class=" a7"></div>
+      </div>
+      <div class="a8"></div>
+      <div class="a9"></div>
+      <div class="a11"></div>
+      <div class=" a12"> <div class=" a13">M</div></div>
+  
+     <div class="yt-search-wrapper">
+    <div class="search-box">
+        <!-- Input Field -->
+        <input type="text" id="main-search" placeholder="Search">
+        
+        <!-- Clear (X) Button -->
+        <button id="clear-btn" title="Clear search">×</button>
+    </div>
+    
+    <!-- Search Button -->
+    <button id="submit-search">
+        <svg viewBox="0 0 24 24"><path d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"></path></svg>
+    </button>
+</div>
+<script>
+    const searchInput = document.getElementById('main-search');
+const searchBtn = document.getElementById('submit-search');
+const clearBtn = document.getElementById('clear-btn');
+
+// Search Function
+function triggerSearch() {
+    const query = searchInput.value;
+    if (query.trim() !== "") {
+        window.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`, "_blank");
+    }
+}
+
+// Click par search
+searchBtn.addEventListener('click', triggerSearch);
+
+// Enter dabane par search
+searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') triggerSearch();
+});
+
+// Input likhne par "X" button dikhana
+searchInput.addEventListener('input', () => {
+    if (searchInput.value.length > 0) {
+        clearBtn.style.display = 'block';
+    } else {
+        clearBtn.style.display = 'none';
+    }
+});
+
+// "X" button click par text clear karna
+clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearBtn.style.display = 'none';
+    searchInput.focus();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+ <a href="" class="cut-refresh-back">
+    &times;
+</a>
+<img src="1image.jfif" alt="" height="130" width="139" class="img">
+<div class="alt">Madiha Arain</div>
+<div class="name">@kteachkhalil . 385 subscribes . 70 videos</div>
+<div class="him">Android Developer, Web Designer , and Graphic Designer feel free contact but dont ......more</div>
+<a href="kteachkhalil" class="must">kteachkhalil.com</a>
+
+
+
+<div class="menu-container">
+    <!-- Main Button -->
+    <button class="main-btn" id="createBtn">
+        <svg viewBox="0 0 24 24"><path d="M20 12h-8V4h-2v8H2v2h8v8h2v-8h8z"></path></svg>
+        <span>Create</span>
+    </button>
+
+    <!-- First Level Menu -->
+    <div class="dropdown" id="mainMenu">
+        <div class="item">
+            <div style="display:flex; align-items:center;">
+                <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                <span>Upload video</span>
+            </div>
+        </div>
+
+        <!-- Go Live with Sub-menu -->
+        <div class="item" id="goLiveItem">
+            <div style="display:flex; align-items:center;">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+                <span>Go live</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            
+            <!-- Second Level Menu -->
+            <div class="sub-dropdown" id="subMenu">
+                <div class="item"><span>Stream Now</span></div>
+                <div class="item"><span>Schedule Stream</span></div>
+                <div class="item"><span>Manage Camera</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const createBtn = document.getElementById('createBtn');
+    const mainMenu = document.getElementById('mainMenu');
+    const goLiveItem = document.getElementById('goLiveItem');
+    const subMenu = document.getElementById('subMenu');
+
+    // 1. Create button click: Main menu kholo ya band karo
+    createBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mainMenu.classList.toggle('show');
+        subMenu.classList.remove('show'); // Jab main band ho toh sub bhi band ho
+    });
+
+    // 2. Go Live click: Sub-menu kholo (Side par)
+    goLiveItem.addEventListener('click', (e) => {
+        e.stopPropagation();
+        subMenu.classList.toggle('show');
+    });
+
+    // 3. Kahin bhi bahar click ho toh sab band kar do
+    window.addEventListener('click', () => {
+        mainMenu.classList.remove('show');
+        subMenu.classList.remove('show');
+    });
+</script>
+<div class="window-bar">
+    <button id="min-btn" class="min-button">
+        <!-- Minimize Icon (Horizontal Line) -->
+        <svg width="12" height="12" viewBox="0 0 12 12">
+            <rect fill="currentColor" width="10" height="1.5" x="1" y="8"></rect>
+        </svg>
+    </button>
+</div>
+
+<!-- Aapka content jo minimize hona hai -->
+<div id="content-area">
+    <!-- Yahan aapka baki ka kam hoga -->
+</div>
+<script>
+    const minBtn = document.getElementById('min-btn');
+const content = document.getElementById('content-area');
+
+minBtn.addEventListener('click', () => {
+    // Content ko hide karne ke liye
+    content.classList.toggle('hide-window');
+});
+</script>
+
+
+
+ <img src="Gemini_Generated_Image_9ohc2n9ohc2n9ohc.png" alt="" class="gimini">
+
+<div class="chrome-address-bar">
+    <!-- Search Chip (Jo aapne mark kiya hai) -->
+    <div class="ask-google-chip" id="ask-google">
+        <svg class="lens-icon" viewBox="0 0 24 24">
+            <path d="M12,11c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S13.1,11,12,11z M18,7h-1.2l-0.9-1.2C15.6,5.3,15,5,14.3,5H9.7 C9,5,8.4,5.3,8.1,5.8L7.2,7H6C4.9,7,4,7.9,4,9v8c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V9C20,7.9,19.1,7,18,7z M12,17c-2.2,0-4-1.8-4-4 s1.8-4,4-4s4,1.8,4,4S14.2,17,12,17z"></path>
+        </svg>
+        <span>Ask Google</span>
+    </div>
+
+    <!-- Star Icon (Bookmark) -->
+    <button class="star-btn" title="Bookmark this page">
+        <svg viewBox="0 0 24 24">
+            <path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+        </svg>
+    </button>
+</div>
+<script>
+    const askGoogle = document.getElementById('ask-google');
+
+askGoogle.addEventListener('click', () => {
+    // Ye aapko Google ke main page par le jayega
+    window.open('https://www.google.com', '_blank');
+});
+
+// Star button toggle logic
+const starBtn = document.querySelector('.star-btn');
+starBtn.addEventListener('click', () => {
+    const starSvg = starBtn.querySelector('svg');
+    // Click hone par star ka rang tabdeel karna
+    if (starSvg.style.fill === 'rgb(26, 115, 232)') {
+        starSvg.style.fill = '#5f6368';
+    } else {
+        starSvg.style.fill = '#1a73e8'; // Blue color (Bookmarked)
+    }
+});
+</script>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="main-wrapper">
+    <!-- Home Navigation Section -->
+    <nav class="home-nav">
+        <button class="home-btn">Home</button>
+    </nav>
+
+    <!-- Videos Grid Section -->
+    <div class="videos-container">
+        <h2 class="grid-title">Videos</h2>
+        <div class="custom-video-grid">
+            <!-- Video 1 -->
+            <div class="v-card">
+                <div class="v-thumb">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/PwA23aiHMW8?si=pmoHHehdUWUT1n1V&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="v-time">1:01:58</span>
+                </div>
+                <div class="v-meta">
+                    <h3>Make Your Own Website on Any Topic!</h3>
+                    <p>123 views • 9 days ago</p>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="v-card">
+                <div class="v-thumb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eTq3TQYWhNI?si=V8Tz9hbiyYMdZ3pZ&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="v-time">1:43:39</span>
+                </div>
+                <div class="v-meta">
+                    <h3>HTML Class 1: Full Stack Web Dev</h3>
+                    <p>101 views • 5 months ago</p>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="v-card">
+                <div class="v-thumb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eTq3TQYWhNI?si=V8Tz9hbiyYMdZ3pZ&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="v-time">1:26:05</span>
+                </div>
+                <div class="v-meta">
+                    <h3>HTML Class 3: Images & Links</h3>
+                    <p>72 views • 5 months ago</p>
+                </div>
+            </div>
+            <!-- Video 4 -->
+            <div class="v-card">
+                <div class="v-thumb">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sVf0fYVeS8Y?si=Q8pGhi2_riAONoXj&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="v-time">24:55</span>
+                </div>
+                <div class="v-meta">
+                    <h3>CSS Advanced Tips & Tricks</h3>
+                    <p>57 views • 5 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sidebar">
+    <div class="nav-item active" onclick="showContent('home')">
+        <i class="fas fa-home"></i> <span>Home</span>
+    </div>
+    <div class="nav-item" onclick="showContent('shorts')">
+        <i class="fab fa-youtube-square"></i> <span>Shorts</span>
+    </div>
+    <div class="nav-item" onclick="showContent('subs')">
+        <i class="fab fa-youtube"></i> <span>Subscriptions</span>
+    </div>
+    <div class="nav-item" onclick="showContent('you')">
+        <i class="fas fa-user-circle"></i> <span>You</span>
+    </div>
+</div>
+<script>
+    function showContent(sectionName) {
+    // 1. Saare sections ko hide kar do
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // 2. Jo section click hua hai sirf usay dikhao
+    document.getElementById(sectionName + '-section').style.display = 'block';
+
+    // 3. Sidebar buttons ka color change karo (Active state)
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    // Jis button par click hua usay active class do
+    event.currentTarget.classList.add('active');
+}
+</script>
+
+
+
+
+
+
+<div class="nav-bar">
+    <div class="tabs">
+        <div class="tab">Videos</div>
+        <div class="tab">Shorts</div>
+        <div class="tab">Courses</div>
+        <div class="tab">Playlists</div>
+    </div>
+   
+
+
+
+
+
+
+    <form action="https://www.youtube.com/results" method="GET" style="position: relative; width: 100%; max-width: 600px; margin: 20px auto;">
+    
+    <div style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); pointer-events: none; display: flex;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </div>
+
+    <input type="text" 
+           name="search_query" 
+           placeholder="Search" 
+           style="width: 100%; 
+                  padding: 12px 20px 12px 48px; 
+                  border: 1px solid #ccc; 
+                  border-radius: 30px; 
+                  outline: none; 
+                  font-size: 16px;
+                  background: transparent;
+                  box-sizing: border-box;">
+
+    <button type="submit" style="display: none;"></button>
+
+</form>
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
+
+
